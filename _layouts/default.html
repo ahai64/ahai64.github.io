@@ -10,10 +10,12 @@
     <meta name="google-site-verification" content="Chqvu8G-_351vqDBYqR0m5ZjH7vZ9t7uPPj7bLX2q-o" />
     {% seo title=false %}
     <title>
-        {% if page.layout == 'post' %}
-        {{ site.author }} / {{ page.title }}
-        {% else %}
+        {% if page.layout == 'index' %}
         {{ site.author }}
+        {% elsif page.layout == 'tags' %}
+        {{ site.author }} / {{ page.tag-name }}
+        {% else %}
+        {{ site.author }} / {{ page.title }}
         {% endif %}
     </title>
 </head>
