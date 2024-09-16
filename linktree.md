@@ -1,7 +1,7 @@
 ---
 title: Linktree
 ---
-# Linktree
+# Ahai64 / Linktree
 
 ## <a class="link" href="https://ahai64.itch.io/" target="_blank">Itchio</a>
 
