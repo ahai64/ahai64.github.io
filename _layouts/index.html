@@ -2,7 +2,7 @@
 layout: default
 ---
 {{ content }}
-<p>所有标签：
+<p>文章标签：
     {% for tag in site.tags %}
     <a href={{ site.baseurl | append: "/tags/" | append: tag.tag-name | append: "/" }}>
         #{{ tag.tag-name }}&nbsp;
