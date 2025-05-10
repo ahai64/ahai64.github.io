@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{{ content }}
+<p>文章标签：
+    {% for tag in site.tags %}
+    <a href={{ site.baseurl | append: "/tags/" | append: tag.tag-name | append: "/" }}>
+        #{{ tag.tag-name }}&nbsp;
+    </a>
+    {% endfor %}
+</p>
+<hr>
+{% for post in site.posts %}
+<p><a href="{{ post.url }}" target="_blank">{{ post.title }}</a></p>
+{% endfor %}
+<hr>
+<p>行到水穷处，坐看云起时。</p>

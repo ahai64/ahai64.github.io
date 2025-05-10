@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang='zh'>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel='shortcut icon' type='image/png' href='https://avatars.githubusercontent.com/u/148314633?v=4'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&family=Fira+Code">
+    <link rel="stylesheet" href="/styles.css" />
+    <meta name="google-site-verification" content="Chqvu8G-_351vqDBYqR0m5ZjH7vZ9t7uPPj7bLX2q-o" />
+    {% seo title=false %}
+    <title>
+        {% if page.layout == 'index' %}
+        {{ site.author }}
+        {% elsif page.layout == 'tags' %}
+        {{ site.author }} / {{ page.tag-name }}
+        {% else %}
+        {{ site.author }} / {{ page.title }}
+        {% endif %}
+    </title>
+</head>
+
+<body>
+    <main>
+        {{ content }}
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+</html>

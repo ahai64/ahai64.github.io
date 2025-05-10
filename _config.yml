@@ -1,0 +1,18 @@
+author: Ahai64
+url: "https://ahai64.github.io"
+locale: zh
+
+highlighter: none
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable : true
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+collections:
+  tags:
+    output: true
+    permalink: tags/:path/
