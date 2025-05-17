@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: 游戏 开发 PICO-8
-title: PICO-8 printh 调试
+title: 通过 printh 调试 PICO-8 游戏
 ---
 
 `printh` 与 `print` 是两个完全不同的打印函数。`print` 将内容输出到 PICO-8 自身的控制台，而 `printh` 将内容输出到外部控制台，或者保存为文本文档。这对于游戏调试来说更加方便，因为在游戏运行时，游戏界面和内部控制台无法同时显示。

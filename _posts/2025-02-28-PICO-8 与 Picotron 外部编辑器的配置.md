@@ -15,8 +15,6 @@ PICO-8 和 Picotron 的原始卡带文件的本质都是文本文件，都可以
 
 将代码全部放到外部Lua文件中，美术音乐等资源在卡带文件中，两边分开编辑互不影响，运行时通过 `include` 功能从卡带调用外部代码，这样做才是更安全可靠的做法。
 
-
-
 ## 下载安装 VSCode 及其 Lua 扩展
 
 https://code.visualstudio.com/
